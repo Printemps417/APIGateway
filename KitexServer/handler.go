@@ -30,7 +30,7 @@ func (s *BizServiceImpl) Query(ctx context.Context, req *gateway.BizRequest) (*g
 }
 
 func (s *BizServiceImpl) InitDB() {
-	db, err := gorm.Open(sqlite.Open("foo.db"), &gorm.Config{})
+	db, err := gorm.Open(sqlite.Open("students.db"), &gorm.Config{})
 	if err != nil {
 		panic(err)
 	}

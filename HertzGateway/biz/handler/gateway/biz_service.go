@@ -22,7 +22,7 @@ import (
 )
 
 func genericCall(ctx context.Context, c *app.RequestContext, req gateway.BizRequest, httpMethod string) {
-	path := "../idl/gateway.thrift"
+	path := "./idl/student.thrift"
 	service := c.Param("service")
 	method := c.Param("method")
 	p, err := generic.NewThriftFileProvider(path)

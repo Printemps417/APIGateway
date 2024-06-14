@@ -19,7 +19,7 @@ func main() {
 
 	svr := gateway.NewServer(
 		bizService,
-		server.WithServerBasicInfo(&rpcinfo.EndpointBasicInfo{ServiceName: "student"}),
+		server.WithServerBasicInfo(&rpcinfo.EndpointBasicInfo{ServiceName: "gateway"}),
 		server.WithRegistry(registry),
 		server.WithServiceAddr(serverAddress),
 	)
